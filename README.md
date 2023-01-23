@@ -7,15 +7,23 @@ The purpose of the Project to control the robot movement on x and y axis. When t
 
 # Installing #
 
-The simulator requires a Python 2.7 installation, the [pygame](http://pygame.org/) library, [PyPyBox2D](https://pypi.python.org/pypi/pypybox2d/2.1-r331), and [PyYAML](https://pypi.python.org/pypi/PyYAML/).
+For run the program the xterm libray should be downloaded. By writing the folowing command on to the terminal window the xterm package can be install. Purpose of that libray is to prints outputs of the nodes on a new terminal window.
 
-Pygame, unfortunately, can be tricky (though [not impossible](http://askubuntu.com/q/312767)) to install in virtual environments. If you are using `pip`, you might try `pip install hg+https://bitbucket.org/pygame/pygame`, or you could use your operating system's package manager. Windows users could use [Portable Python](http://portablepython.com/). PyPyBox2D and PyYAML are more forgiving, and should install just fine using `pip` or `easy_install`.
+	sudo apt-get install xterm -y
+
+Navigate to your ROS workspace 'src' folder and clone this repository using the following command:
+	
+	git clone <link of the repository>
+
+Then, navigate to the workspace directory and run the following command to build the package:
+
+	catkin_make
 
 # Running #
 
 You can run the program with:
 ```bash
-	roslaunch assignment_2_2022 assignment_2.launch
+roslaunch assignment_2_2022 assignment_2.launch
 ```
 # How it's works #
 
