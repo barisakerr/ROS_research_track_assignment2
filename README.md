@@ -62,7 +62,8 @@ To provide the expected steps in the B part of the assignment the service.goal.p
 
 To provide the expected steps in the C part of the assignment the printer.py folder has been created. The purpose of this program file is to subscribe the robot’s position and it’s velocity by using the custom message and prints the distance between the robot and the target position and the average speed of the robot. The code is taking the target position values which has been entered by the user to the action.usr.py by using the rospy.get_param() function for x and y positions both. Then the actual x and y position values of the robot taking from the message. Depends on this position info, the direct distance between the robot and the target position has been computing.  Also, the robot’s actual x and y velocities getting from the message. Then the actual velocity values which are coming from the message has been computing to find the average velocity of the robot. At the end the distance between the robot and the target position and the average speed of the robot is printing on the printer screen. The frequency of the screen has been settled as a 1 per second that is why user supposed to see the distance between the robot and the target value and the average speed of the robot value in every 1 second on the printer screen. 
 
+# Flow Chart #
 
-
+<img width="635" alt="Screen Shot 2023-01-25 at 22 54 18" src="https://user-images.githubusercontent.com/83571132/214700418-0dc0bb39-3a97-4036-9688-9e03311a72ac.png">
 
 
